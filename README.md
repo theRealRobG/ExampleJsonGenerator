@@ -2,6 +2,8 @@
 
 This is a repo demonstrating how you might use Swift to define models that can be used to generate JSON that may be hosted on a configuration server.
 
+There is also a GitHub Action defined to demonstrate JSON validation with each push (to ensure the output JSON is matching the expectation of the Swift definitions).
+
 ## Repo Structure
 
 The folder structure looks odd as it is demonstrating how Swift can be one tool that is used to generate configuration in a shared repository, while other teams with different language backrounds may choose to opt for another option.
