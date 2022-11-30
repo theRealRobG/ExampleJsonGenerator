@@ -2,6 +2,14 @@
 
 This is a repo demonstrating how you might use Swift to define models that can be used to generate JSON that may be hosted on a configuration server.
 
+## Repo Structure
+
+The folder structure looks odd as it is demonstrating how Swift can be one tool that is used to generate configuration in a shared repository, while other teams with different language backrounds may choose to opt for another option.
+
+The output JSON exists within the `modules/example-config/configs` directory. Each environment (`int`, `int-nft`, `prod`) has its own config that is located at `ios/config` (again indicating that there may be more than just iOS configuration in the repo).
+
+The code for the command line tool can be found at `tools/swift/Sources/ExampleJsonGenerator`. Within this directory, the code that defines the configuration to be generated is found within the `Configuration` directory, and the code that handles the JSON generation is found within `Generator`. You can play with what values get generated in each environment via `Configuration/Configuration.swift` and you can alter the structure of the configuration via `Configuration/ConfigurationModel.swift`. 
+
 ## Building
 There are 2 ways of using the executable:
 1) Running through Swift (e.g. `swift run ExampleJsonGenerator`).
