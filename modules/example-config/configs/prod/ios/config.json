@@ -4,7 +4,7 @@
   ],
   "exampleComplicatedProperty" : {
     "exampleChildObject" : {
-      "exampleNumber" : 10000
+      "exampleNumber" : 100
     }
   },
   "exampleSimpleProperty" : "PROD"
