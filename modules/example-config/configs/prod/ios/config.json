@@ -1,0 +1,11 @@
+{
+  "exampleArrayOfEnums" : [
+    "VOD"
+  ],
+  "exampleComplicatedProperty" : {
+    "exampleChildObject" : {
+      "exampleNumber" : 100
+    }
+  },
+  "exampleSimpleProperty" : "PROD"
+}

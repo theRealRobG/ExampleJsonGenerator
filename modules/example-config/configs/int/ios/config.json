@@ -1,0 +1,12 @@
+{
+  "exampleArrayOfEnums" : [
+    "VOD",
+    "LIVE"
+  ],
+  "exampleComplicatedProperty" : {
+    "exampleChildObject" : {
+      "exampleNumber" : 42
+    }
+  },
+  "exampleSimpleProperty" : "INT"
+}
