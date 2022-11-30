@@ -3,6 +3,10 @@ import Foundation
 
 extension ExampleJsonGenerator {
     struct Validate: ParsableCommand {
+        static var configuration = CommandConfiguration(
+            abstract: "Validate that the config files match the expected encoded output from the Swift definitions."
+        )
+
         mutating func run() throws {
             let encoder = JSONEncoder()
             encoder.outputFormatting = [.sortedKeys, .prettyPrinted]

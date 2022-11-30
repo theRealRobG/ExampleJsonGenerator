@@ -3,6 +3,10 @@ import Foundation
 
 extension ExampleJsonGenerator {
     struct Build: ParsableCommand {
+        static var configuration = CommandConfiguration(
+            abstract: "Encode defined Swift models into JSON and output the files into config directories."
+        )
+
         @Option(
             help: "Build only for the provided environemnt.",
             completion: .list(Environment.allCases.map { $0.rawValue })
